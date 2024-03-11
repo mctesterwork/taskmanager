@@ -2,15 +2,14 @@
 import React from 'react'
 import styled from 'styled-components';
 
-interface Props{
+interface Props {
     children: React.ReactNode;
-
 }
 
-function GlobalStyleProvider({children} : Props) {
+function GlobalStyleProvider({ children } : Props) {
   return (
     <GlobalStyles>{children}</GlobalStyles>
-  )
+  );
 }
 const GlobalStyles = styled.div`
     padding: 2.5rem;
